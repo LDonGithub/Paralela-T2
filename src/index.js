@@ -22,7 +22,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //routes
-app.use(require('./routes/index'));
+app.use(require('./routes/pokemon'));
 
 //starting the server
 app.listen(app.get('port'), () => {
