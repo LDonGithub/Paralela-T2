@@ -5,7 +5,7 @@ const morgan = require('morgan');
 //prueba fetch
 const fetch = require('node-fetch');
 let poke;
-fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=5')
+fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10')
     .then(res => res.json())
     .then(data => poke = data);
 
