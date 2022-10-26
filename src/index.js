@@ -40,7 +40,7 @@ app.get('/pokemon/:id', (req, res) => {
 //pendiete
 app.get('/paginate/:ids', (req, res) => {
     let Tag = req.params.ids.split("-");
-    fetch(`https://pokeapi.co/api/v2/pokemon?offset=[${Tag[0]}]&limit=[${Tag[1]}]`)
+    fetch(`https://pokeapi.co/api/v2/pokemon?offset=10&limit=10`)
     .then(res => res.json())
     .then(data => res.json(data));
 });
