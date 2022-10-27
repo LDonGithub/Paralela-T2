@@ -61,6 +61,7 @@ async function CrearPokemon(data){
         console.log(element.ability.name)
         caras.innerHTML+= `${element.ability.name} <br>`;
     });
+    
 
     
     var div1 = document.createElement("div");
@@ -86,3 +87,84 @@ async function CrearPokemon(data){
 
 }
 
+let pokemonsList = document.getElementById("pokemons-list");
+let links = document.getElementById("links");
+
+
+
+function updatePokemons(url) {
+  if (url) {
+
+    //Reiniciamos pokemones actuales
+    pokemonsList.innerHTML = "";
+    // Llamamos a la API de pokemon con Fetch
+    fetch(url)
+      .then(res => res.json())
+      .then(res => {
+        // Obtenemos y recorremos a los primeros 20 pokemones obtenidos
+        for (let i of res.results) {
+
+          // Realizamos otra solicitud Fetch con la URL especifica del pokemon actual recorrido, para obtener datos mas especficos como la imagen
+          fetch(i.url)
+            .then(x => x.json())
+            .then(x => {
+              // Vamos pintando o ingresando la imagen y nombre del pokemon actual que se esta evaluando 
+                console.log(x);
+                console.log(x.abilities);
+                
+                
+
+                let tipo = "";
+                let habilidades = "";
+                x.abilities.forEach(element => {
+                    habilidades+= `${element.ability.name} <br>`;
+                });
+
+                if(x.types.length>1){
+                    tipo = `${x.types[0].type.name} & ${x.types[1].type.name}`;
+                }else{
+                    tipo = `${x.types[0].type.name}`
+                }
+
+                
+
+              pokemonsList.innerHTML += `
+<div class="card mb-3 col-6 " style="max-width: 540px;">
+  <div class="row g-0 p-2">
+    <div class="col-md-4">
+      <img src="${x.sprites.front_default}" class="img-fluid rounded-start" alt="">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title text-capitalize">${x.name}</h5>
+        <p class="text-capitalize">ID: ${x.id}<br> Altura: ${x.height} <br>Peso: ${x.weight} <br>Tipo: ${tipo}<br>Habilidades: <br> ${habilidades} </p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+                                              
+                                              
+                                        
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              `;
+            });
+        };
+        // Pintamos los enlaces de siguiente o anterior de la paginacion de los pokemones 
+        //Boton hacia atrás
+        links.innerHTML = (res.previous) ? `<button type="button" class="btn btn-primary m-5 justify-content-center" onclick="updatePokemons('${res.previous}')">Atrás</button>` : "";
+        //Botón hacia adelante
+        links.innerHTML += (res.next) ? `<button type="button" class="btn btn-primary m-5 justify-content-center" onclick="updatePokemons('${res.next}')">Siguiente</button>` : "";
+
+      });
+  }
+
+}
+
+updatePokemons("https://pokeapi.co/api/v2/pokemon");
