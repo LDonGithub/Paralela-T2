@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const morgan = require('morgan');
 
@@ -9,6 +10,7 @@ app.set('json spaces', 2);
 //middlewares
 app.use(morgan('dev'));
 app.use(express.json());
+app.use(cors());
 
 //routes
 app.use(require('./routes/pokemon'));
