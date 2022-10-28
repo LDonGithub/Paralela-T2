@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 
-//prueba fetch
+/*prueba fetch
 const fetch = require('node-fetch');
 let poke;
 fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10')
@@ -11,7 +11,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10')
 
 app.get('/pokemon/', (req, res) => {
     res.json(poke);
-});
+});*/
 
 //settings
 app.set('port', process.env.PORT || 8080);

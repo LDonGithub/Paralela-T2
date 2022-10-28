@@ -5,4 +5,8 @@ router.get('/', (req, res) => {
     res.json({"Tittle":"Hello World"});
 });
 
+router.get('/id/', (req, res) =>{
+
+});
+
 module.exports = router;
