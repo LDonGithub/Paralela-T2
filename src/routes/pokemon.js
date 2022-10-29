@@ -13,10 +13,11 @@ router.get('/dex/', (req, res) =>{
     //.then((data) => console.log(data));
 });
 
-/*router.get(`/id${num}/`, (req, res) => {
+router.get('/id/:num', (req, res) =>{
+    let num = req.params.num;
     fetch(`https://pokeapi.co/api/v2/pokemon/${num}/`)
     .then((res) => res.json())
-    .then((data) => res.json(data.name))
-});*/
+    .then((data) => res.json(data))
+})
 
 module.exports = router;
