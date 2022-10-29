@@ -8,6 +8,6 @@ Este proyecto se ejecuta tanto por lado servidor y cliente.
 2. Para ejecutar el cliente necesitamos mover los Archivos que se encuentran en la carpeta [/FRONT/src](/FRONT/src/), a nuestro servidor web local(XAMPP, WAMP, LiveServer).
 ## API Metodos GET
 ###Ejemplo API Busqueda por ID
-![Busqueda](/IMG API/2.png)
+![Busqueda](IMG API/2.png)
 ###Ejemplo API Paginación
-![Paginacion](/IMG API/1.png)
+![Paginacion](IMG API/1.png)
