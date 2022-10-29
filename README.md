@@ -1,2 +1,2 @@
 # Paralela-T2
-!(https://nodejs.org/static/images/logo.svg)
+![NODE](https://nodejs.org/static/images/logo.svg)
