@@ -1,4 +1,4 @@
-# Taller 2 - Computacion paralela y distribuida
+# Taller 2 - Computacion paralela y distribuida 2022
 ![NODE](https://nodejs.org/static/images/logo.svg)
 ##
 Para ejecutar la API, se require tener instalado, NodeJS
