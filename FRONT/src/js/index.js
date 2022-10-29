@@ -49,8 +49,8 @@ async function CrearPokemon(data){
     var caras = document.createElement("p");
     caras.setAttribute("class","card-text text-capitalize");
     caras.innerHTML+= `ID: ${pokemonID.id} <br>`;
-    caras.innerHTML+= `Altura: ${pokemonID.altura} <br>`;
-    caras.innerHTML+= `Peso: ${pokemonID.peso} <br>`;
+    caras.innerHTML+= `Altura: ${pokemonID.altura/10} m <br>`;
+    caras.innerHTML+= `Peso: ${pokemonID.peso/10} Kg <br>`;
     caras.innerHTML+= `Tipo: `; 
 
     if(pokemonID.tipo.length > 1){
@@ -122,7 +122,7 @@ async function paginacion(url){
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title text-capitalize">${prom.name}</h5>
-                  <p class="text-capitalize">ID: ${prom.id}<br> Altura: ${prom.height} <br>Peso: ${prom.weight} <br>Tipo: ${tipo}<br>Habilidades: <br> ${habilidades} </p>
+                  <p class="text-capitalize">ID: ${prom.id}<br> Altura: ${(prom.height)/10} m <br>Peso: ${(prom.weight)/10} Kg <br>Tipo: ${tipo}<br>Habilidades: <br> ${habilidades} </p>
                 </div>
               </div>
             </div>
