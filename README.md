@@ -9,3 +9,5 @@ Este proyecto se ejecuta tanto por lado servidor y cliente.
 ## API Metodos GET
 ###Ejemplo API Busqueda por ID
 ![Busqueda](/IMG API/2.png)
+###Ejemplo API Paginación
+![Paginacion](/IMG API/1.png)
