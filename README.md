@@ -9,6 +9,6 @@ Este proyecto se ejecuta tanto por lado servidor y cliente.
 ## API Metodos GET
 
 ### Ejemplo API Busqueda por ID
-![Busqueda](IMG API/2)
+![Busqueda](https://github.com/LDonGithub/Paralela-T2/blob/298921f7cfae665be1a5bb6f755343d63e2c480d/IMG%20API/2.png)
 ### Ejemplo API Paginación
 ![Paginacion](https://github.com/LDonGithub/Paralela-T2/blob/155e000fc952a307c322cdde06ea8f7c8f54a51e/IMG%20API/1.png)
