@@ -15,3 +15,8 @@ Este proyecto se ejecuta tanto por lado servidor y cliente.
 
 ## Otros Repositorios 
 Repositorio Front:  [Front end](https://github.com/LDonGithub/Front-ParalelaT2)
+
+## Estudiantes
+LUCIANO EDUARDO DONOSO MONTERO
+ESTEBAN ANDRES QUEZADA PAREDES
+JEAN SEBASTIÁN SANDOVAL CASTRO
