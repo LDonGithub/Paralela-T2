@@ -2,7 +2,7 @@ const contenendor = document.querySelector("#resultados");
 
 //constructor del objeto PKMN
 function pokemon(id, nombre, altura, peso, tipo, formas, habilidades, ubicacion, imagen) {
-  this.id = id;
+  this.id = idi;
   this.nombre = nombre;
   this.altura = altura;
   this.peso = peso;
