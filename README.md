@@ -14,4 +14,4 @@ Este proyecto se ejecuta tanto por lado servidor y cliente.
 ![Paginacion](https://github.com/LDonGithub/Paralela-T2/blob/155e000fc952a307c322cdde06ea8f7c8f54a51e/IMG%20API/1.png)
 
 ## Otros Repositorios 
-Repositorio Front:  ![Front end](https://github.com/LDonGithub/Front-ParalelaT2)
+Repositorio Front:  [Front end](https://github.com/LDonGithub/Front-ParalelaT2)
