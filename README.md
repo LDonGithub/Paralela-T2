@@ -11,4 +11,4 @@ Este proyecto se ejecuta tanto por lado servidor y cliente.
 ### Ejemplo API Busqueda por ID
 ![Busqueda](IMG API/2)
 ### Ejemplo API Paginación
-![Paginacion](IMG API/1.png)
+![Paginacion](https://github.com/LDonGithub/Paralela-T2/blob/155e000fc952a307c322cdde06ea8f7c8f54a51e/IMG%20API/1.png)
